@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #c9f2e3, #f6fffb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background: white;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 22px;
+  padding: 25px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.15);
+  animation: fadeIn 1s ease;
+}
+
+section {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.welcome h1,
+h2 {
+  color: #0f766e;
+}
+
+.welcome p {
+  margin-top: 8px;
+  color: #555;
+}
+
+.placeholder {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Countdown */
+.count-box {
+  background: #ecfdf5;
+  padding: 12px;
+  border-radius: 16px;
+  margin-top: 10px;
+}
+
+.count-box h3 {
+  font-size: 0.95rem;
+  color: #0f766e;
+}
+
+.count-box p {
+  font-size: 0.9rem;
+  color: #065f46;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 6px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: none;
+  background: #d1fae5;
+  color: #065f46;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #0f766e;
+  color: white;
+}
+
+/* Message box */
+#messageBox {
+  background: #ecfdf5;
+  padding: 18px;
+  border-radius: 16px;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  color: #064e3b;
+}
+
+/* Buttons */
+button {
+  margin-top: 12px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  background: #0f766e;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.music-btn {
+  background: #065f46;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Evergreen 💚</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <section class="welcome">
+      <h1>Happy Anniversary Prachi 💚</h1>
+      <p>A small gift made with a lot of love</p>
+    </section>
+
+    <section class="dates">
+      <h2>Important Dates ✨</h2>
+      <p><strong>14 December 2022</strong> — We chose each other</p>
+      <p class="placeholder">More memories will be added here 💫</p>
+    </section>
+
+    <section class="countdowns">
+      <h2>Us ⏳</h2>
+
+      <div class="count-box">
+        <h3>Next Anniversary</h3>
+        <p id="anniversaryCountdown">Loading...</p>
+      </div>
+
+      <div class="count-box">
+        <h3>Next Monthly Milestone</h3>
+        <p id="monthlyCountdown">Loading...</p>
+      </div>
+
+      <div class="count-box">
+        <h3>Time Together</h3>
+        <p id="sinceMet">Loading...</p>
+      </div>
+    </section>
+
+    <section class="messages">
+      <h2>For You 💚</h2>
+
+      <div class="tabs">
+        <button class="active" onclick="switchCategory('cute', this)">Cute</button>
+        <button onclick="switchCategory('romantic', this)">Romantic</button>
+        <button onclick="switchCategory('future', this)">Future</button>
+        <button onclick="switchCategory('comfort', this)">Comfort</button>
+      </div>
+
+      <div id="messageBox">Loading something special...</div>
+
+      <button onclick="newMessage()">Show me another one 💚</button>
+      <button class="music-btn" onclick="toggleMusic()">Play Music 🎵</button>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
